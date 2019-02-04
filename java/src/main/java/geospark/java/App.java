@@ -140,7 +140,7 @@ public class App
        Logger.getLogger("org").setLevel(Level.WARN);
        Logger.getLogger("akka").setLevel(Level.WARN);
 
-       String resourceFolder = "D:\\GS_libraries\\GeoSpark-master\\core\\src\\test\\resources\\";
+       String resourceFolder = "D:\\WIP\\Project_Frontages_and_Setbacks\\GS_libraries\\GeoSpark-master\\core\\src\\test\\resources\\";
 
        PointRDDInputLocation = resourceFolder + "arealm-small.csv";
        PointRDDSplitter = FileDataSplitter.CSV;
