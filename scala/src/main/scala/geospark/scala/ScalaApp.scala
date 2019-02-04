@@ -15,7 +15,7 @@ import org.datasyslab.geospark.spatialRDD.RectangleRDD;
 import org.datasyslab.geospark.spatialOperator.JoinQuery;
 import org.datasyslab.geospark.enums.GridType;
 
-object SimpleApp 
+object ScalaApp 
 {
   
   def main(args: Array[String]) 
@@ -23,8 +23,8 @@ object SimpleApp
     val conf = new SparkConf().setAppName("Simple Application").setMaster("local[*]");
     
     val sc = new SparkContext(conf)
-    val pathPoint = "D:\\GS_libraries\\GeoSpark-master\\core\\src\\test\\resources\\arealm-small.csv"
-    val pathRect = "D:\\GS_libraries\\GeoSpark-master\\core\\src\\test\\resources\\zcta510-small.csv"
+    val pathPoint = "D:\\WIP\\Project_Frontages_and_Setbacks\\GS_libraries\\GeoSpark-master\\core\\src\\test\\resources\\arealm-small.csv"
+    val pathRect = "D:\\WIP\\Project_Frontages_and_Setbacks\\GS_libraries\\GeoSpark-master\\core\\src\\test\\resources\\zcta510-small.csv"
     val splitter = FileDataSplitter.CSV
     val storage = StorageLevel.MEMORY_ONLY
     val indexType = IndexType.RTREE
